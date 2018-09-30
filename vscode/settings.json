@@ -1,0 +1,82 @@
+{
+    // Startup
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.statusBar.feedback.visible": false,
+    // Editor
+    "window.nativeTabs": true,
+    "window.zoomLevel": 0,
+    "editor.tabSize": 4,
+    "editor.fontSize": 14,
+    "editor.rulers": [
+        100, 120
+    ],
+    "editor.cursorStyle": "line-thin",
+    "editor.fontFamily": "Hasklig, 'Source Code Pro', Menlo, monospace, 'Apple Color Emoji'",
+    "editor.fontLigatures": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    // Colors
+    "workbench.colorTheme": "One Monokai",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorCustomizations": {
+        "editorWarning.foreground": "#FFCC00",
+        "list.warningForeground": "#FFCC00",
+        "gitDecoration.modifiedResourceForeground": "#88CCBB",
+        "gitDecoration.ignoredResourceForeground": "#666666",
+    },
+    // Language-specific
+    //
+    // Python
+    "python.venvPath": "~/envs",
+    // Use flake8 rather than pylint
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "/usr/local/bin/flake8",
+    "python.linting.flake8CategorySeverity.E": "Warning",
+    "python.formatting.provider": "black",
+    "python.formatting.autopep8Path": "/usr/local/bin/autopep8",
+    "python.formatting.blackPath": "/usr/local/bin/black",
+    // JavaScript
+    "eslint.autoFixOnSave": false,
+    "eslint.packageManager": "yarn",
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "[html]": {
+        "editor.tabSize": 2
+    },
+    "prettier.eslintIntegration": true,
+    // HTML
+    "emmet.triggerExpansionOnTab": true,
+    // Icons
+    "vsicons.associations.folders": [
+        {
+            "icon": "dist",
+            "extensions": [
+                "bundles"
+            ],
+        },
+        {
+            "icon": "config",
+            "extensions": [
+                "settings"
+            ],
+        },
+        {
+            "icon": "db",
+            "extensions": [
+                "migrations"
+            ],
+        },
+        {
+            "icon": "src",
+            "extensions": [
+                "static"
+            ],
+        },
+    ],
+    "javascript.updateImportsOnFileMove.enabled": "always",
+}
