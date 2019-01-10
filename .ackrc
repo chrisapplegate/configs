@@ -1,0 +1,12 @@
+--ignore-directory=is:.pytest_cache
+--ignore-directory=is:build
+--ignore-directory=is:bundles
+--ignore-directory=is:coverage
+--ignore-directory=is:junit
+--ignore-directory=is:__snapshots__
+
+--ignore-file=is:.coverage
+--ignore-file=is:yarn.lock
+--ignore-file=match:.log$
+
+--type-add=js=.jsx,.js
