@@ -35,15 +35,17 @@ fi
 # https://www.iterm2.com/documentation-shell-integration.html
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
-# pyenv
-eval "$(pyenv init -)"
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+# Add pip3 --user modules to PATH
+export PATH=~/Library/Python/3.7/bin:$PATH
 
 # virtualenvwrapper
 # https://virtualenvwrapper.readthedocs.io/en/latest/
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
-export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+source ~/Library/Python/3.7/bin/virtualenvwrapper.sh
+
+# Add gem --user-install to PATH
+export PATH=~/.gem/ruby/2.3.0/bin:$PATH
 
 # Git prompt
 # https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
@@ -73,3 +75,12 @@ function prompt_command() {
 }
 PS1="\[\e[93m\]\$GITPROMPT\[\e[0m\]\[\e[34m\]\W \[\e[92m\]\\$\[\e[m\] "
 PROMPT_COMMAND=prompt_command
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '~/Downloads/google-cloud-sdk/path.bash.inc' ]; then . '~/Downloads/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '~/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '~/Downloads/google-cloud-sdk/completion.bash.inc'; fi
+
+# Google Cloud credentials
+export GOOGLE_APPLICATION_CREDENTIALS="~/.googlecloud/credentials.json"
