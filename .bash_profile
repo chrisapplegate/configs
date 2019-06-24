@@ -44,6 +44,9 @@ export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 source ~/Library/Python/3.7/bin/virtualenvwrapper.sh
 
+# Add Postgres tools to PATH
+export PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH
+
 # Add gem --user-install to PATH
 export PATH=~/.gem/ruby/2.3.0/bin:$PATH
 

@@ -20,7 +20,9 @@
         "*.toml": "toml"
     },
     "files.exclude": {
-        "**/migrations/*.py": true
+        "**/__pycache__": true,
+        "**/.pytest_cache": true,
+        "**/.awcache": true,
     },
 
     // Themes
@@ -57,4 +59,5 @@
     // Misc
     "emmet.triggerExpansionOnTab": true,
     "terminal.integrated.rendererType": "dom",
+    "files.useExperimentalFileWatcher": true,
 }
