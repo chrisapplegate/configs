@@ -43,15 +43,21 @@ One or more of the following:
 * [Firefox](https://www.mozilla.org/en-GB/firefox/new/)
 * Windows emulator using [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and the [modern.ie VMs](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)
 
-## Tools
+## Other tools
 
 * [Cyberduck](https://cyberduck.io/), for S3/FTP
-* [Slack](https://slack.com/intl/en-gb/downloads/mac)
-* [Spotify](https://www.spotify.com/uk/download/other/) (or a music provider of choice)
+* [Slack](https://slack.com/intl/en-gb/downloads/mac), for getting distracted
+* [Spotify](https://www.spotify.com/uk/download/other/) (or an alternative music provider of choice)
+
+## Command-line tools
+
+* [ack](https://beyondgrep.com) (a better version of grep)
+* [htop](https://hisham.hm/htop/) (a better version of top)
+* [fd](https://github.com/sharkdp/fd) (a better version of find)
 
 ## Make things look nicer
 
-* A nice fixed-width font such as [Cascadia Code](https://github.com/microsoft/cascadia-code) or [Hasklig](https://github.com/i-tu/Hasklig). Remember to turn on ligatures!
+* A nice fixed-width font such as [Hasklig](https://github.com/i-tu/Hasklig) or [Cascadia Code](https://github.com/microsoft/cascadia-code). Remember to turn on ligatures!
 * A better theme for iTerm2 - I quite like [Argonaut](https://github.com/effkay/iTerm-argonaut)
 * A better theme for VS Code - I quite like [One Monokai](https://marketplace.visualstudio.com/items?itemName=azemoh.one-monokai)
 
